@@ -1,19 +1,22 @@
+# Hi, I'm Wayne 👋
 
-![Metrics](/github-metrics.svg)
+Welcome to my GitHub profile! Here are some of my GitHub stats:
 
+---
 
+### GitHub Activity
+![Activity](/github-metrics.svg)
 
-<!--
-**wynnee0110/wynnee0110** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Top Languages
+![Languages](/github-metrics-languages.svg)
 
-Here are some ideas to get you started:
+### Streaks
+![Streaks](/github-metrics-streaks.svg)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Trophies
+![Trophies](/github-metrics-trophies.svg)
+
+### Contributions Calendar
+![Contributions Calendar](/github-metrics-calendar.svg)
+
+---
