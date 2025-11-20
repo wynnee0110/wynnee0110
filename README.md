@@ -1,10 +1,10 @@
 <table>
   <tr>
     <td>
-      <img src="/github-metrics.svg" alt="GitHub Stats" width="300"/>
+      <img src="/github-metrics.svg" alt="GitHub Stats" width="500" style="max-width:100%;"/>
     </td>
     <td>
-      <img src="/metrics.plugin.isocalendar.fullyear.svg" alt="ISO Calendar Full Year" width="400"/>
+      <img src="/metrics.plugin.isocalendar.fullyear.svg" alt="ISO Calendar Full Year" width="600" style="max-width:100%;"/>
     </td>
   </tr>
 </table>
