@@ -23,5 +23,5 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics.plugin.halfyearcalendar.svg
+          filename: metrics.plugin.isocalendar.svg
           plugin_half_year_calendar: yes
