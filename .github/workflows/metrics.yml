@@ -42,3 +42,10 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics-calendar.svg
           plugin_calendar: yes
+    
+     
+      - uses: lowlighter/metrics@latest
+        with:
+         token: ${{ secrets.METRICS_TOKEN }}
+         filename: metrics.plugin.isocalendar.svg
+         plugin_isocalendar: yes
