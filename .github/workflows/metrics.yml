@@ -19,3 +19,9 @@ jobs:
           filename: github-metrics.svg
           base: header, activity, repositories, streaks, trophies
           plugin_languages: yes
+
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.plugin.halfyearcalendar.svg
+          plugin_half_year_calendar: yes
