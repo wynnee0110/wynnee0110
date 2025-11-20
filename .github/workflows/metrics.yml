@@ -2,8 +2,8 @@ name: Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # runs daily at midnight
-  workflow_dispatch:     # allows manual trigger
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
     branches: ["main", "master"]
 
@@ -13,28 +13,24 @@ jobs:
     permissions:
       contents: write
     steps:
-      # 1️⃣ Activity + Repositories
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
           base: header, activity, repositories
 
-      # 2️⃣ Top Languages
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics-languages.svg
           plugin_languages: yes
 
-      # 3️⃣ Streaks
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics-streaks.svg
           plugin_streaks: yes
 
-      # 4️⃣ Trophies
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
