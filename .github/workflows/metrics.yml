@@ -13,6 +13,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      # Step 1: Full metrics (stats)
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -20,5 +21,9 @@ jobs:
           base: header, activity, repositories, streaks, trophies
           plugin_languages: yes
 
-      # Step 1: Header only
-
+      # Step 2: ISO Calendar only
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.plugin.isocalendar.svg
+          plugin_isocalendar: yes
