@@ -13,17 +13,16 @@ jobs:
     permissions:
       contents: write
     steps:
-      # Only the header
+      # Step 1: Header only
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
           base: header
 
-      # ISO Calendar
+      # Step 2: ISO Calendar only (no header, no username, large)
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.plugin.isocalendar.svg
-          base:
           plugin_isocalendar: yes
