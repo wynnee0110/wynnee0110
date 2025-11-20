@@ -1,4 +1,5 @@
 ## Hi there 👋
+![Metrics](/github-metrics.svg)
 
 <!--
 **wynnee0110/wynnee0110** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
