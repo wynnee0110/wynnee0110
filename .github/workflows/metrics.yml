@@ -37,7 +37,7 @@ jobs:
       - name: Starred topics
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.topics.svg
+          filename: metrics.plugin.topics.mode.svg
           token: NOT_NEEDED
           base: ""
           plugin_topics: yes
