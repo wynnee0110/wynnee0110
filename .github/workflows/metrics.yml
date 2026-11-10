@@ -34,13 +34,13 @@ jobs:
           plugin_isocalendar_duration: full-year
 
       # 3. Starred GitHub Topics
-      - name: Starred topics
+# 3. GitHub Topic Icons
+      - name: Topic icons
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.topics.mode.svg
-          token: NOT_NEEDED
+          filename: metrics.plugin.topics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_topics: yes
-          plugin_topics_mode: starred
-          plugin_topics_sort: stars
+          plugin_topics_mode: icons
           plugin_topics_limit: 12
