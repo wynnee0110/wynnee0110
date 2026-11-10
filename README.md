@@ -9,6 +9,16 @@
   </tr>
 </table>
 
+<tr>
+  <td colspan="2" align="center">
+    <img src="/metrics.plugin.topics.svg"
+         alt="GitHub Topics"
+         width="600"
+         style="max-width:100%;"/>
+  </td>
+</tr>
+
+
 
 
 <p align="left">
