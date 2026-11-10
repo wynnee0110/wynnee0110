@@ -1,8 +1,9 @@
+
 name: GitHub Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # daily at midnight
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
     branches: ["main", "master"]
@@ -12,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
+      # 1. Main GitHub Metrics
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -20,6 +23,7 @@ jobs:
           base: header, activity, repositories, streaks, trophies
           plugin_languages: yes
 
+      # 2. Full-year Contribution Calendar
       - name: Full-year calendar
         uses: lowlighter/metrics@latest
         with:
@@ -28,3 +32,15 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
+      # 3. Starred GitHub Topics
+      - name: Starred topics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.topics.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_topics: yes
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
+          plugin_topics_limit: 12
